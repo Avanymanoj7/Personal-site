@@ -1,0 +1,376 @@
+/* ================= GENERAL ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #40514e;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+
+/* ================= HEADINGS ================= */
+
+h1 {
+  margin: 0;
+
+  font-family: "Sacramento", cursive;
+
+  font-size: 5rem;
+
+  color: #2f5d62;
+}
+
+h2 {
+  color: #2f5d62;
+
+  font-size: 2.5rem;
+
+  margin: 20px 0;
+}
+
+h3 {
+  color: #2f5d62;
+
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+  position: relative;
+
+  min-height: 650px;
+
+  padding-top: 90px;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    to bottom,
+    #dff6ff,
+    #b8e8f5
+  );
+}
+
+
+/* Hero Text */
+
+.hero-text {
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero h2 {
+  margin-top: -10px;
+
+  font-size: 1.6rem;
+
+  font-weight: 500;
+
+  color: #2f5d62;
+}
+
+.hero h2 span {
+  text-decoration: underline;
+}
+
+
+/* Clouds */
+
+.cloud {
+  position: absolute;
+
+  width: 180px;
+}
+
+.cloud-top {
+  top: 55px;
+
+  right: 15%;
+}
+
+.cloud-bottom {
+  top: 230px;
+
+  left: 12%;
+}
+
+
+/* Mountain */
+
+.mountain {
+  position: absolute;
+
+  width: min(900px, 80%);
+
+  bottom: 0;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.intro {
+  max-width: 700px;
+
+  margin: 70px auto 60px;
+
+  padding: 0 25px;
+}
+
+
+/* Profile Picture */
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+
+/* Intro Paragraph */
+
+.intro p {
+  max-width: 600px;
+
+  margin: auto;
+}
+
+
+/* ================= DIVIDER ================= */
+
+hr {
+  width: 70px;
+
+  border: 0;
+
+  border-top: 7px dotted #c8dfe5;
+
+  margin: 60px auto;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 0 25px;
+}
+
+
+/* Each Skill */
+
+.skill-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 50px;
+
+  text-align: left;
+
+  margin: 70px 0;
+}
+
+
+/* Skill Images */
+
+.skill-img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  flex-shrink: 0;
+
+  border-radius: 20px;
+}
+
+
+/* Skill Text */
+
+.skill-text {
+  flex: 1;
+}
+
+.skill-text h3 {
+  margin-top: 0;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+  max-width: 650px;
+
+  margin: 70px auto 100px;
+
+  padding: 0 25px;
+}
+
+.contact h3 {
+  margin-top: 10px;
+}
+
+
+/* Contact Button */
+
+.contact-button {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 12px 25px;
+
+  border-radius: 8px;
+
+  background: #66bfbf;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  transition: 0.3s;
+}
+
+
+/* Button Hover */
+
+.contact-button:hover {
+  background: #2f5d62;
+
+  transform: translateY(-2px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+  background: #2f5d62;
+
+  padding: 45px 20px 25px;
+}
+
+
+/* Footer Links */
+
+footer a {
+  color: #dff6ff;
+
+  text-decoration: none;
+
+  margin: 0 18px;
+
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: white;
+}
+
+
+/* Copyright */
+
+footer p {
+  color: #dff6ff;
+
+  margin-top: 25px;
+
+  font-size: 0.85rem;
+}
+
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 700px) {
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+
+  /* Hero */
+
+  .hero {
+    min-height: 500px;
+  }
+
+
+  /* Clouds */
+
+  .cloud {
+    width: 120px;
+  }
+
+  .cloud-top {
+    right: 5%;
+  }
+
+  .cloud-bottom {
+    left: 5%;
+
+    top: 220px;
+  }
+
+
+  /* Mountain */
+
+  .mountain {
+    width: 120%;
+  }
+
+
+  /* Skills */
+
+  .skill-row {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 20px;
+  }
+
+  .skill-text {
+    max-width: 500px;
+  }
+
+
+  /* Footer */
+
+  footer a {
+    display: inline-block;
+
+    margin: 8px;
+  }
+
+}
